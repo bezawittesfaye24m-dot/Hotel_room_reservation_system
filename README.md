@@ -52,40 +52,40 @@ Room r104 = new TwoBedRoom(104);
 
 Room r106 = new DeluxeRoom(106);
 Room r107 = new DeluxeRoom(107);
-✔ Location:
-Lines 12–22
 
-🔒 2. Encapsulation
+✔ Location: Lines 12–22
+
+🔒 3. Encapsulation
 
 📁 File: Room.java
 
-private int roomNumber;   // Line 4
-private double price;     // Line 5
-private boolean booked;   // Line 6
+private int roomNumber; // Line 4
+private double price;   // Line 5
+private boolean booked; // Line 6
 
 ✔ Demonstrates data hiding
 
-🧱 3. Constructor
+🧱 4. Constructor
 
 📁 File: Room.java
 
 public Room(int roomNumber, double price)
 
-✔ Location:
-Room.java → Lines 9–13
-🔑 4. Getters & Setters
+✔ Location: Lines 9–13
+
+🔑 5. Getters & Setters
 
 📁 File: Room.java
 
 Getters:
-getRoomNumber()   // Line 16–18
-getPrice()        // Line 20–22
-isBooked()        // Line 24–26
+getRoomNumber() → Lines 16–18
+getPrice() → Lines 20–22
+isBooked() → Lines 24–26
 Setters:
-setRoomNumber()   // Line 28–30
-setPrice()        // Line 32–34
-setBooked()       // Line 36–38
-🧬 5. Inheritance
+setRoomNumber() → Lines 28–30
+setPrice() → Lines 32–34
+setBooked() → Lines 36–38
+🧬 6. Inheritance
 
 📁 Files:
 
@@ -98,7 +98,7 @@ class DeluxeRoom extends Room   // Line 2
 
 ✔ Shows child-parent relationship
 
-🔄 6. Polymorphism
+🔄 7. Polymorphism
 ✔ Method Overriding (Runtime Polymorphism)
 
 📁 Files:
@@ -117,64 +117,48 @@ public String showFeatures()
 bookRoom()
 bookRoom(String customerName)
 
-✔ Location:
+✔ Location: Lines 40–49
 
-Room.java → Lines 40–49
 ✔ Runtime Polymorphism Example
 
 📁 File: Main.java
 
 Room selected = r100;
 
-✔ Location:
+✔ Location: Line 58
 
-Main.java → Line 58
-🎮 7. User Input (Scanner)
+🎮 8. User Input (Scanner)
 
 📁 File: Main.java
-
-Used for:
 
 Room number → Line 55
 Name → Line 82
 Phone → Line 85
 Days → Line 88
-💡 8. Abstraction
+💡 9. Abstraction
 
 📁 File: Main.java
 
 Users only interact with:
 
-Menu (Line 25–28)
+Menu (Lines 25–28)
 Booking system
 
-Internal logic is hidden inside classes.
+Internal logic is hidden inside classes
 
-📊 9. Booking Logic Flow (Main.java)
+📊 10. Booking Logic Flow
 
-✔ Room selection:
+✔ Room selection → Lines 58–72
+✔ Booking check → Lines 74–78
+✔ Booking action → Line 91
+✔ Output → Lines 97–105
 
-Lines 58–72
-
-✔ Booking check:
-
-Lines 74–78
-
-✔ Booking action:
-
-Line 91
-
-✔ Output result:
-
-Lines 97–105
 📌 Conclusion
 
 This project demonstrates key OOP concepts in Java:
+
 ✔ Classes and Objects
 ✔ Encapsulation (Room.java Lines 4–6)
 ✔ Inheritance (Line 2 in child classes)
 ✔ Polymorphism (showFeatures + bookRoom overload)
 ✔ Abstraction (Main.java menu system)
-
-
-
